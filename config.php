@@ -24,7 +24,7 @@ return [
     'db_pass' => getenv('DB_PASS') ?: 'Temp123',
 */
     'db_host' => getenv('DB_HOST') ?: 'acela.proxy.rlwy.net',
-    'db_port' => getenv('DB_PORT') ?:  51840,
+    'db_port' => getenv('DB_PORT') ?: '51840',
     'db_name' => getenv('DB_NAME') ?: 'railway',
     'db_user' => getenv('DB_USER') ?: 'root',
     'db_pass' => getenv('DB_PASS') ?: 'TwonEboiyCxjeldQPEhGjVuUWbiFmFIz',
