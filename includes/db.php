@@ -38,8 +38,10 @@ function db(): PDO
             $pdo = new PDO($dsn, $config['db_user'], $config['db_pass'], [
                 PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
                 PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+PDO::MYSQL_ATTR_SSL_VERIFY_SERVER_CERT => false,
                 PDO::ATTR_EMULATE_PREPARES   => false,
-            ]);
+ PDO::ATTR_TIMEOUT => 30,
+               ]);
         } catch (PDOException $e) {
             die('<h1>Error de conexion a la base de datos</h1>'
               . '<p>Revisa config.php (host/usuario/clave) y que MySQL este corriendo.</p>'
