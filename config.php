@@ -17,11 +17,17 @@
  */
 
 return [
-    'db_host' => getenv('DB_HOST') ?: 'localhost',
+/*    'db_host' => getenv('DB_HOST') ?: 'localhost',
     'db_port' => getenv('DB_PORT') ?: '3306',
     'db_name' => getenv('DB_NAME') ?: 'tienda_WG',
     'db_user' => getenv('DB_USER') ?: 'admin1',
     'db_pass' => getenv('DB_PASS') ?: 'Temp123',
+*/
+ 'db_host' => getenv('DB_HOST') ?: 'acela.proxy.rlwy.net',
+    'db_port' => getenv('DB_PORT') ?: '51840',
+    'db_name' => getenv('DB_NAME') ?: 'railway',
+    'db_user' => getenv('DB_USER') ?: 'root',
+    'db_pass' => getenv('DB_PASS') ?: 'TwonEboiyCxjeldQPEhGjVuUWbiFmFIz',
 
     // Datos del sitio (se muestran en toda la web)
     'sitio_nombre'  => 'Vinilo & CD´s',
